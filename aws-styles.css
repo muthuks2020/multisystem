@@ -1,0 +1,576 @@
+/* File: aws-styles.css */
+/* AWS Infrastructure Showcase Styles */
+
+.aws-infrastructure-page {
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #fed7aa 100%);
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+/* AWS Hero Section */
+.aws-hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.aws-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #FF9900, #ec7211);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(255, 153, 0, 0.3);
+    animation: slideDown 0.8s ease-out;
+}
+
+.aws-badge i {
+    font-size: 24px;
+}
+
+.aws-hero-title {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color: #1f2937;
+    animation: slideDown 0.8s ease-out 0.2s backwards;
+}
+
+.aws-gradient {
+    background: linear-gradient(135deg, #FF9900, #ec7211, #4daae8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aws-hero-subtitle {
+    font-size: 22px;
+    color: #6b7280;
+    margin-bottom: 50px;
+    animation: slideDown 0.8s ease-out 0.4s backwards;
+}
+
+.aws-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: slideUp 0.8s ease-out 0.6s backwards;
+}
+
+.aws-stat {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.aws-stat:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 153, 0, 0.2);
+}
+
+.aws-stat i {
+    font-size: 42px;
+    color: #FF9900;
+    margin-bottom: 15px;
+}
+
+.aws-stat-value {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.aws-stat-label {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+/* Architecture Diagram */
+.aws-architecture-diagram {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.architecture-visual {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arch-layer-visual {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid;
+    transition: all 0.3s ease;
+}
+
+.arch-layer-visual:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.frontend-layer {
+    border-left-color: #4daae8;
+}
+
+.api-layer {
+    border-left-color: #FF9900;
+}
+
+.ai-layer {
+    border-left-color: #146eb4;
+    background: linear-gradient(135deg, #fff5e6, #ffe4b3);
+}
+
+.data-layer {
+    border-left-color: #10b981;
+}
+
+.monitoring-layer {
+    border-left-color: #7c3aed;
+}
+
+.arch-layer-visual h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.aws-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.aws-service-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.aws-service-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FF9900, #ec7211);
+}
+
+.aws-service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 153, 0, 0.2);
+}
+
+.aws-service-box.highlight-box {
+    border: 2px solid #FF9900;
+    background: linear-gradient(135deg, #fffbf5, #ffffff);
+}
+
+.aws-service-box.highlight-box::before {
+    height: 6px;
+}
+
+.aws-service-box i {
+    font-size: 32px;
+    color: #FF9900;
+    margin-bottom: 15px;
+}
+
+.aws-service-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.aws-service-box p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.service-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.service-metrics span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.service-metrics i {
+    font-size: 14px;
+    color: #4daae8;
+}
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.feature-tag {
+    background: #4daae8;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.flow-arrow-down {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    color: #FF9900;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Service Spotlights */
+.aws-services-detail {
+    margin: 60px 0;
+}
+
+.service-spotlight {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+}
+
+.bedrock-spotlight {
+    border-top-color: #4daae8;
+}
+
+.sagemaker-spotlight {
+    border-top-color: #10b981;
+}
+
+.spotlight-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.spotlight-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FF9900, #ec7211);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.spotlight-header h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.spotlight-header p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.spotlight-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.spotlight-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.spotlight-feature {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.spotlight-feature:hover {
+    background: #e0f2fe;
+    transform: translateY(-3px);
+}
+
+.spotlight-feature i {
+    font-size: 28px;
+    color: #4daae8;
+    margin-bottom: 12px;
+}
+
+.spotlight-feature h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.spotlight-feature p {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.spotlight-code {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.spotlight-code h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.spotlight-code pre {
+    overflow-x: auto;
+}
+
+.spotlight-code code {
+    color: #94a3b8;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.ml-pipeline-visual {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pipeline-step {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.pipeline-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(77, 170, 232, 0.3);
+}
+
+.pipeline-step i {
+    font-size: 32px;
+    color: #10b981;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pipeline-step span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.pipeline-arrow {
+    color: #FF9900;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+/* Cost Optimization */
+.aws-cost-section {
+    margin: 60px 0;
+}
+
+.cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.cost-card {
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid #10b981;
+}
+
+.cost-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+.cost-card i {
+    font-size: 48px;
+    color: #10b981;
+    margin-bottom: 20px;
+}
+
+.cost-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.cost-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cost-savings {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Security Section */
+.aws-security-section {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.security-feature {
+    text-align: center;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.security-feature:hover {
+    background: #e0f2fe;
+    transform: translateY(-5px);
+}
+
+.security-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4daae8, #146eb4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.security-icon i {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.security-feature h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.security-feature p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .spotlight-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .spotlight-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .ml-pipeline-visual {
+        flex-direction: column;
+    }
+    
+    .pipeline-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .aws-hero-title {
+        font-size: 42px;
+    }
+    
+    .aws-stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .aws-services {
+        grid-template-columns: 1fr;
+    }
+    
+    .cost-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .security-grid {
+        grid-template-columns: 1fr;
+    }
+}
